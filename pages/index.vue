@@ -1,35 +1,17 @@
 <template>
   <div class="container">
     <div>
-      <Logo />
-      <h1 class="title">
-        homemade-crunch
-      </h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
+      <button
+        class="product__button snipcart-add-item"
+        data-item-id="1"
+        data-item-price="3.99"
+        data-item-url="/"
+        data-item-description="data.description"
+        data-item-name="ur mom"
+      >Add to cart</button>
     </div>
   </div>
 </template>
-
-<script>
-export default {}
-</script>
 
 <style>
 .container {

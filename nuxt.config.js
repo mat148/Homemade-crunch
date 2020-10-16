@@ -1,6 +1,5 @@
 export default {
-  // Target (https://go.nuxtjs.dev/config-target)
-  target: 'static',
+  mode: "universal",
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
@@ -11,7 +10,12 @@ export default {
       { hid: 'description', name: 'description', content: '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: "preconnect", href: "https://app.snipcart.com" },
+      { rel: "preconnect", href: "https://cdn.snipcart.com" },
+      { rel: 'stylesheet', href: 'https://cdn.snipcart.com/themes/v3.0.23/default/snipcart.css', defer: true }
+    ],
+    script: [
+      { src: "https://cdn.snipcart.com/themes/v3.0/default/snipcart.js", defer: true }
     ]
   },
 
@@ -36,5 +40,10 @@ export default {
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
+  },
+
+  server: {
+    port: 3333,
+    host: '0.0.0.0'
   }
 }
