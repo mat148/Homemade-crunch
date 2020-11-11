@@ -336,3 +336,19 @@ footer {}
 footer .container .v-card {
   flex: 1 1 33.33%;
 }
+
+footer .container form .formkit-fields {
+  flex-wrap: nowrap;
+}
+footer .container form .formkit-field {
+  flex: 1 1 0% !important;
+  margin: 0 !important;
+  padding: 0 12px 0 0;
+}
+footer .container form .formkit-submit {
+  margin: 0 !important;
+  flex: 0 1 150px !important;
+  background-color: #8C2641 !important;
+  font-weight: bold !important;
+  text-transform: uppercase;
+}

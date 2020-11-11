@@ -231,7 +231,7 @@
                 <div class="button-container pt-12 d-flex justify-center">
                   <v-button
                     class="product__button"
-                    v-scroll-to="'#signup'"
+                    v-scroll-to="'#footer'"
                   >
                     Signup for our newsletter
                   </v-button>
@@ -250,6 +250,7 @@
 
       <v-footer
         class="pa-0 black"
+        id="footer"
       >
         <v-container class="py-12 d-flex">
           <v-card
@@ -257,7 +258,7 @@
             tile
             class="black"
           >
-            <v-card-title class="pa-0 white--text">Homemade Crunch</v-card-title>
+            <v-card-title class="pa-0 white--text mb-2">Homemade Crunch</v-card-title>
             <v-card-text class="pa-0 white--text">410 E Laurel street</v-card-text>
             <v-card-text class="pa-0 white--text">Syracuse, NY 13203</v-card-text>
             <v-card-text class="pa-0 white--text">315.382.8467</v-card-text>
@@ -267,15 +268,18 @@
             tile
             class="black"
           >
-            <v-card-title class="pa-0 white--text">Follow Us</v-card-title>
-            <v-btn class="pa-0 white--text" href="#" text>Lorem</v-btn>
+            <v-card-title class="pa-0 white--text mb-2">Follow Us</v-card-title>
+            <v-btn class="pa-0 white--text" href="https://www.instagram.com/homemade_crunch/" text><v-icon>mdi-instagram</v-icon></v-btn>
+            <v-btn class="pa-0 white--text" href="https://www.facebook.com/homemadecrunch" text><v-icon>mdi-facebook</v-icon></v-btn>
+            <v-btn class="pa-0 white--text" href="https://www.pinterest.com/homemadecrunch/" text><v-icon>mdi-pinterest</v-icon></v-btn>
+            <v-btn class="pa-0 white--text" href="https://www.youtube.com/channel/UC6H-8_ndZOqqaurpu22ebvg" text><v-icon>mdi-youtube</v-icon></v-btn>
           </v-card>
           <v-card
             flat
             tile
             class="black"
           >
-            <v-card-title class="pa-0 white--text">Stay up to date</v-card-title>
+            <v-card-title class="pa-0 white--text mb-2">Stay up to date</v-card-title>
             <script async data-uid="fdc9c465a3" src="https://thoughtful-inventor-7932.ck.page/fdc9c465a3/index.js"></script>
           </v-card>
         </v-container>
