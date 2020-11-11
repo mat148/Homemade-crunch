@@ -71,7 +71,7 @@
                     alt="Gianforte Farm based in Cazenovia, New york"
                   ></v-img>
                   <v-card-title>Rolled Oats</v-card-title>
-                  <span class="d-flex">Sourced from <v-btn class="pa-0 link ml-1" href="http://www.gianfortefarm.com/" text><b>Gianforte Farm</b></v-btn></span>
+                  <span class="d-flex flex-wrap justify-center justify-sm-left">Sourced from <v-btn class="pa-0 link ml-1" href="http://www.gianfortefarm.com/" text><b>Gianforte Farm</b></v-btn></span>
                   <v-card-text class="text-center">Gianforte Farm tills 600 acres of Honeoye soils in the rolling hilltops north of Cazenovia, New York</v-card-text>
                 </div>
               </v-card>
@@ -87,7 +87,7 @@
                     src="images/johnstonHoneyBeeFarm.jpg"
                   ></v-img>
                   <v-card-title>Honey</v-card-title>
-                  <span class="d-flex">Sourced from <v-btn class="pa-0 ml-1 link" href="http://www.johnstonshoneybeefarm.com/" text><b>Johnston's Honey Bee Farm</b></v-btn></span>
+                  <span class="d-flex flex-wrap justify-center justify-sm-left">Sourced from <v-btn class="pa-0 ml-1 link" href="http://www.johnstonshoneybeefarm.com/" text><b>Johnston's Honey Bee Farm</b></v-btn></span>
                   <v-card-text class="text-center">Johnston's Honeybee Farm is a sideline operation that has grown from 100 to 300 hives over the past twenty years, located in Eaton, NY</v-card-text>
                 </div>
               </v-card>
@@ -103,7 +103,7 @@
                     src="images/500x500.png"
                   ></v-img>
                   <v-card-title>Maple Syrup</v-card-title>
-                  <span class="d-flex">Sourced from <v-btn class="pa-0 ml-1 link" href="" text><b>Lorem Ipsum</b></v-btn></span>
+                  <span class="d-flex flex-wrap justify-center justify-sm-left">Sourced from <v-btn class="pa-0 ml-1 link" href="" text><b>Lorem Ipsum</b></v-btn></span>
                   <v-card-text class="text-center"></v-card-text>
                 </div>
               </v-card>
