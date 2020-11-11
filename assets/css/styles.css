@@ -150,6 +150,12 @@ body {
   content: '\F0156';
 }
 
+@media(max-width: 767px) {
+  .navigation-bar .nav-shop {
+    display: none;
+  }
+}
+
 .hero-about-container {
   background: rgb(233,230,216);
   background: linear-gradient(180deg, rgba(233,230,216,1) 0%, rgba(237,237,228,1) 100%);
