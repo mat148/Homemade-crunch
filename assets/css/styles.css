@@ -211,6 +211,9 @@ body {
     font-size: 3rem;
     line-height: 4rem;
   }
+  .hero .container {
+    height: 400px;
+  }
 }
 
 /* ABOUT */
