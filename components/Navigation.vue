@@ -16,7 +16,7 @@
 
           <v-img class="logo" src="images/homemadeCrunchLogo.svg" v-scroll-to="'#hero'"></v-img>
 
-          <div>
+          <div class="d-flex">
             <v-btn
               elevation="0"
               text
