@@ -172,7 +172,7 @@
                 </div>
               </div>
             </div>
-            <div class="image-container d-flex justify-end align-center">
+            <div class="image-container d-flex justify-center justify-lg-end align-center">
               <v-img
                 class="bag"
                 src="images/500x500.png"
@@ -180,7 +180,7 @@
             </div>
           </v-container>
           <v-container class="py-lg-12 d-flex flex-wrap flex-column flex-lg-row shop-two">
-            <div class="image-container d-flex justify-start align-center">
+            <div class="image-container d-flex justify-center justify-lg-start align-center">
               <v-img
                 class="bag"
                 src="images/500x500.png"

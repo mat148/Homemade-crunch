@@ -333,6 +333,11 @@ body {
   position: relative;
   overflow: hidden;
 }
+.shop .image-container .v-image {
+  max-width: 500px;
+  max-height: 500px;
+  width: 100%;
+}
 .shop .shop-one {
   padding: 12px 12px 30px 12px;
 }
