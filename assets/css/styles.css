@@ -363,3 +363,38 @@ footer .container form .formkit-submit {
   font-weight: bold !important;
   text-transform: uppercase;
 }
+
+@media(max-width: 1024px) {
+  footer .container {
+    flex-wrap: wrap;
+  }
+  footer .container .v-card {
+    flex: 1 1 50%;
+  }
+  footer .container .v-card:nth-last-child(1) {
+    flex: 1 1 100%;
+    padding: 24px 0 0 0;
+  }
+  footer .container form {
+    max-width: 100% !important;
+  }
+  footer .container form .formkit-submit {
+    flex: 0 1 300px !important;
+  }
+}
+
+@media(max-width: 767px) {
+  footer .container .v-card {
+    flex: 1 1 100%
+  }
+  footer .container .v-card:nth-child(2) {
+    padding: 24px 0 0 0;
+  }
+  footer .container form .formkit-field {
+    flex: 1 1 100% !important;
+    padding: 0 0 12px 0;
+  }
+  footer .container form .formkit-submit {
+    flex: 0 1 100% !important;
+  }
+}
