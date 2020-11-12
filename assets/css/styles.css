@@ -328,19 +328,7 @@ body {
 }
 .shop .image-container {
   position: relative;
-  height: 500px;
-}
-.shop .image-container .bag, .shop .image-container .swap {
-  position: absolute;
-  top: 50%;
-  right: 0;
-  transform: translateY(-50%);
-  transition: 0.2s ease-out;
-  z-index: 1;
-}
-.shop .shop-two .image-container .bag, .shop .shop-two .image-container .swap {
-  right: inherit;
-  left: 0;
+  overflow: hidden;
 }
 .shop .shop-one {
   padding: 12px 12px 30px 12px;
@@ -348,22 +336,10 @@ body {
 .shop .shop-two {
   padding: 30px 12px 12px 12px;
 }
-.shop .image-container .bag {
-  z-index: 2;
-}
 
-@media(max-width: 1024px) {
+@media(max-width: 1264px) {
   .shop .content-container, .shop .image-container {
     width: 100%;
-  }
-  .shop .image-container .bag {
-    position: relative;
-    top: inherit;
-    right: inherit;
-    transform: none
-  }
-  .shop .image-container .swap {
-    display: none;
   }
 }
 
@@ -372,7 +348,6 @@ footer {}
 footer .container .v-card {
   flex: 1 1 33.33%;
 }
-
 footer .container form .formkit-fields {
   flex-wrap: nowrap;
 }

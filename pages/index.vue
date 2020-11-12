@@ -168,20 +168,12 @@
                 class="bag"
                 src="images/500x500.png"
               ></v-img>
-              <v-img
-                class="swap"
-                src="images/500x500.png"
-              ></v-img>
             </div>
           </v-container>
           <v-container class="py-lg-12 d-flex flex-wrap flex-column flex-lg-row shop-two">
             <div class="image-container d-flex justify-start align-center">
               <v-img
                 class="bag"
-                src="images/500x500.png"
-              ></v-img>
-              <v-img
-                class="swap"
                 src="images/500x500.png"
               ></v-img>
             </div>
