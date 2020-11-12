@@ -37,13 +37,8 @@ export default {
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
-    'vue-scrollto/nuxt',
-    '@nuxtjs/gtm'
+    'vue-scrollto/nuxt'
   ],
-
-  gtm: {
-    id: 'GTM-KFRWP7V'
-  },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
