@@ -22,6 +22,7 @@
               text
               v-scroll-to="'#shop'"
               class="nav-shop product__button mr-3"
+              id="nav_granola"
             >
               Shop Granola
             </v-btn>
