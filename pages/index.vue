@@ -180,7 +180,7 @@
 
                 <div class="button-container pt-12 d-flex justify-center">
                   <v-button
-                    class="product__button snipcart-add-item"
+                    class="product__button snipcart-add-item maple-honey-granola"
                     data-item-id="1"
                     data-item-price="8.99"
                     data-item-url="/"
@@ -244,7 +244,7 @@
 
                 <div class="button-container pt-12 d-flex justify-center">
                   <v-button
-                    class="product__button"
+                    class="product__button scroll-to-footer"
                     v-scroll-to="'#footer'"
                   >
                     Signup for our newsletter

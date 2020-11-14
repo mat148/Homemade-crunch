@@ -40,6 +40,10 @@
   text-decoration: underline !important;
 }
 
+.pointer-none {
+  pointer-events: none;
+}
+
 body {
   overflow-x: hidden;
 }
@@ -77,6 +81,9 @@ body {
 }
 .navigation-bar .logo:hover {
   cursor: pointer;
+}
+.navigation-bar .logo .v-responsive__sizer, .navigation-bar .logo .v-image__image, .navigation-bar .logo .v-responsive__content {
+  pointer-events: none;
 }
 .navigation-bar .container.value .logo {
   opacity: 0;
@@ -149,8 +156,15 @@ body {
   padding: 0 !important;
   transition: 0.2s;
 }
+.navigation-toggle span {
+  pointer-events: none;
+}
 .navigation-bar .container.value .navigation-toggle .v-btn__content i::before {
   content: '\F0156';
+}
+
+.snipcart__button--icon svg {
+  pointer-events: none;
 }
 
 @media(max-width: 767px) {
@@ -373,6 +387,9 @@ footer .container form .formkit-submit {
   background-color: #8C2641 !important;
   font-weight: bold !important;
   text-transform: uppercase;
+}
+.formkit-submit span {
+  pointer-events: none;
 }
 
 @media(max-width: 1024px) {

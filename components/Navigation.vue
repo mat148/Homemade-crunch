@@ -7,6 +7,7 @@
         <div class="d-flex justify-space-between">
           <v-btn
             @click="drawer = !drawer"
+            v-model="drawer"
             class="navigation-toggle"
             elevation="0"
             text
@@ -32,8 +33,8 @@
               elevation="0"
               text
             >
-              <v-icon>mdi-cart</v-icon>
-              <span class="header__button-text header__price snipcart-total-price"></span>
+              <v-icon class="pointer-none">mdi-cart</v-icon>
+              <span class="header__button-text header__price snipcart-total-price pointer-none"></span>
             </v-btn>
           </div>
         </div>
@@ -56,16 +57,16 @@
           <v-list-item-group
             v-model="group"
           >
-            <v-list-item style="animation-delay:0.1s" v-scroll-to="'#about'" @click="drawer = false">
-              <h1 class="py-6 px-3">About</h1>
+            <v-list-item class="about-nav nav-item" style="animation-delay:0.1s" v-scroll-to="'#about'" @click="drawer = false">
+              <h1 class="py-6 px-3 pointer-none">About</h1>
             </v-list-item>
 
-            <v-list-item style="animation-delay:0.2s" v-scroll-to="'#source'" @click="drawer = false">
-              <h1 class="py-6 px-3">Locally Sourced</h1>
+            <v-list-item class="local-nav nav-item" style="animation-delay:0.2s" v-scroll-to="'#source'" @click="drawer = false">
+              <h1 class="py-6 px-3 pointer-none">Locally Sourced</h1>
             </v-list-item>
 
-            <v-list-item style="animation-delay:0.3s" v-scroll-to="'#shop'" @click="drawer = false">
-              <h1 class="py-6 px-3">Shop Granola</h1>
+            <v-list-item class="shop-nav nav-item" style="animation-delay:0.3s" v-scroll-to="'#shop'" @click="drawer = false">
+              <h1 class="py-6 px-3 pointer-none">Shop Granola</h1>
             </v-list-item>
           </v-list-item-group>
         </v-list>
