@@ -130,11 +130,11 @@
                   <v-img
                     height="250"
                     width="250"
-                    src="images/500x500.png"
+                    src="images/WillowCreekFarmMapleSyrup.jpg"
                   ></v-img>
                   <v-card-title>Maple Syrup</v-card-title>
-                  <span class="d-flex flex-wrap justify-center justify-sm-left">Sourced from <v-btn class="pa-0 ml-1 link" href="" text><b>Lorem Ipsum</b></v-btn></span>
-                  <v-card-text class="text-center"></v-card-text>
+                  <span class="d-flex flex-wrap justify-center justify-sm-left">Sourced from <v-btn class="pa-0 ml-1 link" href="https://willow-creek-farm-maple-syrup.business.site/" text><b>Willow creek Farm</b></v-btn></span>
+                  <v-card-text class="text-center">Premium maple products such as maple syrup, candy, popcorn, sugar, and maple cream produced in Fulton, NY</v-card-text>
                 </div>
               </v-card>
             </div>

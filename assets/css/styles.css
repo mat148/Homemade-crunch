@@ -96,6 +96,9 @@ body {
   opacity: 0;
   pointer-events: none;
 }
+.header__button .header__checkout span {
+  pointer-events: none;
+}
 .navigation-bar .nav-shop {
   height: 56px !important;
 }
@@ -163,6 +166,9 @@ body {
   content: '\F0156';
 }
 
+.snipcart-cart-header__close-button svg, .snipcart-cart-header__close-button span {
+  pointer-events: none;
+}
 .snipcart__button--icon svg {
   pointer-events: none;
 }
@@ -276,7 +282,6 @@ body {
 .source .source__container .v-card {
   flex: 1 1 0%;
   background-color: transparent;
-  font-size: 18px !important;
 }
 .source .source__container .v-card__inner {}
 .source .source__container .v-image__image {
@@ -289,12 +294,9 @@ body {
   letter-spacing: 0.1rem;
 }
 .source .source__container .v-card .v-card__text {
-  font-size: 18px !important;
-  line-height: 1.5 !important;
+  color: black;
 }
 .source .source__container .v-card .v-card__inner .link {
-  line-height: 1.5 !important;
-  font-size: 18px !important;
 }
 
 @media(max-width: 1024px) {
