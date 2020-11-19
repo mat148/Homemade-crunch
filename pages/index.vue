@@ -260,6 +260,43 @@
             </div>
           </v-container>
         </section>
+
+        <section class="contact py-12">
+          <div class="contact-anchor" id="contact"></div>
+          <v-container class="py-0 py-lg-12">
+            <div class="contact__header d-flex flex-column align-center justify-center mb-12">
+              <h1 class="text-center mb-2">Contact us</h1>
+              <span class="text-center">If you have any questions at feel free to contact us via the form or by giving us a call at (315) 382-8467</span>
+            </div>
+
+            <template>
+              <form
+                action="https://formspree.io/f/mvovqvle"
+                method="POST"
+              >
+                <v-text-field
+                  label="Name"
+                  name="name"
+                  required
+                ></v-text-field>
+                <v-text-field
+                  label="Email"
+                  name="_replyto"
+                  required
+                ></v-text-field>
+                <v-textarea
+                  label="Message"
+                  name="message"
+                  required
+                ></v-textarea>
+                <v-btn
+                  type="submit"
+                  color="accent"
+                >Submit</v-btn>
+              </form>
+            </template>
+          </v-container>
+        </section>
       </v-main>
 
       <v-footer
@@ -307,14 +344,16 @@
   import Navigation from "~/components/Navigation.vue";
 
   export default ({
+    head() {
+      return {
+        script: [{
+          src: 'scripts/contact.js',
+          body: true
+        }]
+      }
+    },
     components: {
       Navigation
-    },
-    transition: {
-      name: 'test',
-      afterLeave(el) {
-        console.log('afterLeave', el)
-      }
     }
   });
 </script>

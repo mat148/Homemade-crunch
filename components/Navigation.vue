@@ -4,7 +4,7 @@
       <v-container
         v-model="drawer"
       >
-        <div class="d-flex justify-space-between">
+        <div class="nav-inner d-flex justify-space-between">
           <v-btn
             @click="drawer = !drawer"
             v-model="drawer"

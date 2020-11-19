@@ -177,6 +177,16 @@ body {
   .navigation-bar .nav-shop {
     display: none;
   }
+  .navigation-bar .nav-inner {
+    justify-content: flex-start;
+  }
+  .navigation-bar .logo {
+    position: relative;
+    top: inherit;
+    left: inherit;
+    transform: inherit;
+    margin: 0 auto 0 12px;
+  }
   .navigation-drawer .container .v-list {
     width: 100% !important;
   }
@@ -242,6 +252,7 @@ body {
   .hero .hero-content span {
     font-size: 3rem;
     line-height: 4rem;
+    letter-spacing: inherit;
   }
   .hero .container {
     height: 400px;
@@ -368,6 +379,28 @@ body {
   .shop .content-container, .shop .image-container {
     width: 100%;
   }
+}
+
+/*CONTACT*/
+.contact {
+  background: #e0ddcc;
+}
+.contact .contact__header h1 {
+  font-family: 'Anton', sans-serif;
+  text-transform: uppercase;
+  font-size: 3rem;
+  line-height: 3.5rem;
+  letter-spacing: 0.1rem;
+}
+.contact form {
+  max-width: 696px;
+  width: 100%;
+  background: white;
+  padding: 24px;
+  border-radius: 3px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 /*FOOTER*/
