@@ -402,6 +402,9 @@ body {
   display: flex;
   flex-direction: column;
 }
+.contact form .v-btn {
+  background-color: #8C2641 !important;
+}
 
 /*FOOTER*/
 footer {}
