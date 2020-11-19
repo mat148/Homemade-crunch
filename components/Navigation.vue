@@ -68,6 +68,10 @@
             <v-list-item class="shop-nav nav-item" style="animation-delay:0.3s" v-scroll-to="'#shop'" @click="drawer = false">
               <h1 class="py-6 px-3 pointer-none">Shop Granola</h1>
             </v-list-item>
+
+            <v-list-item class="contact-nav nav-item" style="animation-delay:0.4s" v-scroll-to="'#contact'" @click="drawer = false">
+              <h1 class="py-6 px-3 pointer-none">Contact us</h1>
+            </v-list-item>
           </v-list-item-group>
         </v-list>
       </v-container>
