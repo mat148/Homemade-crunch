@@ -366,7 +366,6 @@
     head() {
       return {
         script: [{
-          src: 'scripts/geo.js',
           body: true
         }]
       }
