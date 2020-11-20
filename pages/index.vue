@@ -1,5 +1,5 @@
 <template>
-  <v-app v-bind:class="{ alertOpen: alertOpen }">
+  <v-app class="alert-open">
     <!-- Google Tag Manager -->
       <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
       new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -33,16 +33,14 @@
         <!-- End Google Tag Manager (noscript) -->
 
         <v-banner
-          class="state-alert"
+          class="state-alert alert-open"
           transition="slide-y-transition"
-          v-bind:class="{ alertOpen: alertOpen }"
         >
-          By our calculations it looks like you might be visiting our website from outside of New York. Unfortunetly at this time we can't sell our Granola outside of New York. If you are buying a gift for someone with a New York address then please proceed.
+          By our calculations, it looks like you might be visiting our website from outside of New York. Unfortunately at this time, we can't sell our Granola outside of New York. If you are buying a gift for someone with a New York address then please proceed.
           <template>
             <v-btn
               icon
               color="alert"
-              v-on:click="alertOpen = false"
             >
               <v-icon>mdi-close</v-icon>
             </v-btn>
@@ -360,13 +358,12 @@
 <script>
   import Navigation from "~/components/Navigation.vue";
 
-  let nyList = ['Albany', 'Amsterdam', 'Auburn', 'Batavia', 'Beacon', 'Binghamton', 'Buffalo', 'Canandaigua', 'Cohoes', 'Corning', 'Cortland', 'Dunkirk', 'Elmira', 'Fulton', 'Geneva', 'Glen Cove', 'Glens Falls', 'Gloversville', 'Hornell', 'Hudson', 'Ithaca', 'Jamestown', 'Johnstown', 'Kingston', 'Lackawanna', 'Little Falls', 'Lockport', 'Long Beach', 'Mechanicville', 'Middletown', 'Mount Vernon', 'New Rochelle', 'New York', 'Newburgh', 'Niagara Falls', 'North Tonawanda', 'Norwich', 'Ogdensburg', 'Olean', 'Oneida', 'Oneonta', 'Oswego', 'Peekskill', 'Plattsburgh', 'Port Jervis', 'Poughkeepsie', 'Rensselaer', 'Rochester', 'Rome', 'Rye', 'Salamanca', 'Saratoga Springs', 'Schenectady', 'Sherrill', 'Syracuse', 'Tonawanda', 'Troy', 'Utica', 'Watertown', 'Watervliet', 'White Plains', 'Yonkers'];
-
   export default ({
     head() {
       return {
         script: [{
-          body: true
+          body: true,
+          src: 'scripts/geo.js'
         }]
       }
     },
@@ -375,14 +372,14 @@
     },
     data() {
       return {
-        geoData: [],
-        alertOpen: true
+        //geoData: [],
+        //alertOpen: true
       }
     },
     async fetch() {
-      const locationCookie = this.$cookies.get('location-cookie');
+      //const locationCookie = this.$cookies.get('location-cookie');
 
-      if(!locationCookie) {
+      /*if(!locationCookie) {
         console.log('no cookie');
         this.$cookies.set('location-cookie', 'true', {
           path: '/',
@@ -407,7 +404,7 @@
       } else {
         console.log('yes cookie');
         this.alertOpen = false;
-      }
+      }*/
     }
   });
 </script>

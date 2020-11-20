@@ -3,7 +3,7 @@ export default {
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    title: 'homemade-crunch',
+    title: 'Homemade Crunch - Homemade granolla, locally sourced, made in the heart of NY',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -37,8 +37,7 @@ export default {
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
-    'vue-scrollto/nuxt',
-    'cookie-universal-nuxt'
+    'vue-scrollto/nuxt'
   ],
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)

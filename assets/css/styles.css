@@ -21,7 +21,7 @@
   font-family: 'Open Sans', sans-serif !important;
   font-weight: 400;
 }
-.v-application.alertOpen {
+.v-application.alert-open {
   padding-top: 90px;
 }
 
@@ -75,7 +75,7 @@ body {
   z-index: 5;
   transform: translateY(-100%);
 }
-.state-alert.alertOpen {
+.state-alert.alert-open {
   transform: translateY(0%);
 }
 .state-alert .v-banner__text {
