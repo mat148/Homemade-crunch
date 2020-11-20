@@ -383,6 +383,7 @@
       const locationCookie = this.$cookies.get('location-cookie');
 
       if(!locationCookie) {
+        console.log('no cookie');
         this.$cookies.set('location-cookie', 'true', {
           path: '/',
           maxAge: 31556952
@@ -404,6 +405,7 @@
           }
         }
       } else {
+        console.log('yes cookie');
         this.alertOpen = false;
       }
     }
