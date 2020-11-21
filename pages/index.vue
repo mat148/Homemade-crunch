@@ -77,7 +77,7 @@
             <v-container class="py-0 py-lg-12 d-flex justify-center flex-lg-row flex-column-reverse">
               <div class="content-container d-flex justify-start align-center">
                 <div class="content-container-inner pr-lg-12 pt-lg-0 pt-6 text-center text-lg-left">
-                  <p>After 9 years working as a developer hunched over a computer, I found myself feeling drained and burnt out. For the longest time, I wanted to build my own business, but I was always too afraid to strike out on my own. I finally got the courage to do it and create something with my own two hands.</p>
+                  <p>After years working as a developer hunched over a computer, I found myself feeling drained and burnt out. For the longest time, I wanted to build my own business, but I was always too afraid to strike out on my own. I finally got the courage to do it and create something with my own two hands.</p>
 
                   <p>Luckily, I found that I loved cooking and specifically loved crafting granola. I love the infinite combinations of flavors and ingredients that can come together to craft the perfect batch of granola. Most of all, I love being able to use locally sourced ingredients from local farms in upstate NY.</p>
 
