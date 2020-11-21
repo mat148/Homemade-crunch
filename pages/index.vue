@@ -36,7 +36,7 @@
           class="state-alert alert-open"
           transition="slide-y-transition"
         >
-          By our calculations, it looks like you might be visiting our website from outside of New York. Unfortunately at this time, we can't sell our Granola outside of New York. If you are buying a gift for someone with a New York address then please proceed.
+          By our calculations, it looks like you might be visiting our website from outside of New York. Unfortunately, at this time, we can't sell our Granola outside of New York. If you are buying a gift for someone with a New York address, then please proceed.
           <template>
             <v-btn
               icon
@@ -77,11 +77,11 @@
             <v-container class="py-0 py-lg-12 d-flex justify-center flex-lg-row flex-column-reverse">
               <div class="content-container d-flex justify-start align-center">
                 <div class="content-container-inner pr-lg-12 pt-lg-0 pt-6 text-center text-lg-left">
-                  <p>After 9 years of working as a developer hunched over a computer, suffering in a job that I hated, suffering burnout after burnout and wanting for the longest time to build my own business, but always being too afraid to strike out on my own. I finally got the courage to do it and create something with my own two hands.</p>
+                  <p>After 9 years working as a developer hunched over a computer, I found myself feeling drained and burnt out. For the longest time, I wanted to build my own business, but I was always too afraid to strike out on my own. I finally got the courage to do it and create something with my own two hands.</p>
 
-                  <p>I luckily found that I loved cooking and specifically loved crafting granola because of the inifinite combinations of flavors and ingerdients that can come together to craft the perfect batch of granola. I love being able to use locally sourced ingerdients from local farms in upsdate NY</p>
+                  <p>Luckily, I found that I loved cooking and specifically loved crafting granola. I love the infinite combinations of flavors and ingredients that can come together to craft the perfect batch of granola. Most of all, I love being able to use locally sourced ingredients from local farms in upstate NY.</p>
 
-                  <p>I'm so happy to bring to you Homemade Crunch and I hope you'll join us on this journey.</p>
+                  <p>I'm so happy to bring Homemade Crunch to you and I hope you'll join us on this journey.</p>
                 </div>
               </div>
               <div class="image-container d-flex justify-end">
@@ -225,9 +225,9 @@
             <div class="content-container pl-0 pl-lg-12 pt-6 pt-lg-0 d-flex justify-end align-center">
               <div class="content-container-inner text-center">
                 <h1 class="pb-6">Semi-regular small test batch granola</h1>
-                <p class="mb-3">In this space we will be providing granola flavors that we are experimenting with or flavors that have been suggested by our customers. These small batches of granola will be sold untill supplies run out. Prices may very based on the ingredients required, because we may not be able to buy them in bulk. If a flavor is found to be popular it may make its way into our line-up either permentantly or seasonally.</p>
+                <p class="mb-3">In this space we will be providing granola flavors that we are experimenting with or flavors that have been suggested by our customers. These small batches of granola will be sold until supplies run out. Prices may vary based on the ingredients required, because we may not be able to buy them in bulk. If a flavor is found to be popular it may make its way into our line-up either permanently or seasonally.</p>
 
-                <p class="mb-1">To make sure you dont miss out on the next drop sign up to our news letter where you can also get special offers, and infomation on our farmers market apperances!</p>
+                <p class="mb-1">To make sure you don't miss out on the next drop, sign up for our newsletter where you can also get special offers and information on our farmers' market appearances!</p>
 
                 <!--<div class="info-container">
                   <ul class="ingredients reset-list d-flex flex-wrap justify-center">
@@ -281,7 +281,7 @@
           <v-container class="py-0 py-lg-12">
             <div class="contact__header d-flex flex-column align-center justify-center mb-12">
               <h1 class="text-center mb-2">Contact us</h1>
-              <span class="text-center">If you have any questions at feel free to contact us via the form or by giving us a call at (315) 382-8467</span>
+              <span class="text-center">If you have any questions at all, feel free to contact us via the form or by giving us a call at (315) 382-8467.</span>
             </div>
 
             <template>
@@ -325,7 +325,7 @@
             class="black"
           >
             <v-card-title class="pa-0 white--text mb-2">Homemade Crunch</v-card-title>
-            <v-card-text class="pa-0 white--text">410 E Laurel street</v-card-text>
+            <v-card-text class="pa-0 white--text">410 E Laurel Street</v-card-text>
             <v-card-text class="pa-0 white--text">Syracuse, NY 13203</v-card-text>
             <v-card-text class="pa-0 white--text">315.382.8467</v-card-text>
           </v-card>
@@ -369,42 +369,6 @@
     },
     components: {
       Navigation
-    },
-    data() {
-      return {
-        //geoData: [],
-        //alertOpen: true
-      }
-    },
-    async fetch() {
-      //const locationCookie = this.$cookies.get('location-cookie');
-
-      /*if(!locationCookie) {
-        console.log('no cookie');
-        this.$cookies.set('location-cookie', 'true', {
-          path: '/',
-          maxAge: 31556952
-        });
-        this.geoData = await fetch(
-          'https://ipgeolocation.abstractapi.com/v1/?api_key=1eef312cdda9428cac26815c9d3bdd26'
-        ).then(res => res.json());
-
-        var vm = this;
-        compareCity(this.geoData.city);
-
-        function compareCity(city) {
-          var i;
-          for(i = 0; i < nyList.length; i++) {
-            if(nyList[i].toLowerCase().replace(/\s/g, '') == city.toLowerCase().replace(/\s/g, '')) {
-              console.log(city);
-              vm.alertOpen = false;
-            }
-          }
-        }
-      } else {
-        console.log('yes cookie');
-        this.alertOpen = false;
-      }*/
     }
   });
 </script>
