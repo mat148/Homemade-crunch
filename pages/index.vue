@@ -1,5 +1,5 @@
 <template>
-  <v-app class="alert-open">
+  <v-app class="">
     <!-- Google Tag Manager -->
       <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
       new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -33,7 +33,7 @@
         <!-- End Google Tag Manager (noscript) -->
 
         <v-banner
-          class="state-alert alert-open"
+          class="state-alert"
           transition="slide-y-transition"
         >
           By our calculations, it looks like you might be visiting our website from outside of New York. Unfortunately, at this time, we can't sell our Granola outside of New York. If you are buying a gift for someone with a New York address, then please proceed.

@@ -23,8 +23,8 @@ document.addEventListener('DOMContentLoaded', function(event) {
 
   } else {
     console.log('yes cookie');
-    application[0].classList.remove('alert-open');
-    banner[0].classList.remove('alert-open');
+    application[0].classList.add('alert-open');
+    banner[0].classList.add('alert-open');
   }
 });
 
@@ -55,8 +55,8 @@ function compareCity(city) {
     if(nyList[i].toLowerCase().replace(/\s/g, '') == city.toLowerCase().replace(/\s/g, '')) {
       console.log(city);
 
-      application[0].classList.remove('alert-open');
-      banner[0].classList.remove('alert-open');
+      application[0].classList.add('alert-open');
+      banner[0].classList.add('alert-open');
     }
   }
 }
