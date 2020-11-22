@@ -86,7 +86,7 @@
               </div>
               <div class="image-container d-flex justify-end">
                 <v-img
-                  src="https://via.placeholder.com/350x500"
+                  src="images/MatthewMorseBio.jpg"
                   width="350"
                   height="500"
                   contain
@@ -212,18 +212,12 @@
             <div class="image-container d-flex justify-center justify-lg-end align-center">
               <v-img
                 class="bag"
-                src="images/500x500.png"
+                src="images/HoneyMapleGranolaWithWalnutsandCranberries.jpg"
               ></v-img>
             </div>
           </v-container>
           <v-container class="py-lg-12 d-flex flex-wrap flex-column flex-lg-row shop-two">
-            <div class="image-container d-flex justify-center justify-lg-start align-center">
-              <v-img
-                class="bag"
-                src="images/500x500.png"
-              ></v-img>
-            </div>
-            <div class="content-container pl-0 pl-lg-12 pt-6 pt-lg-0 d-flex justify-end align-center">
+            <div class="content-container pl-0 pl-lg-12 pt-6 pt-lg-0 d-flex align-center">
               <div class="content-container-inner text-center">
                 <h1 class="pb-6">Semi-regular small test batch granola</h1>
                 <p class="mb-3">In this space we will be providing granola flavors that we are experimenting with or flavors that have been suggested by our customers. These small batches of granola will be sold until supplies run out. Prices may vary based on the ingredients required, because we may not be able to buy them in bulk. If a flavor is found to be popular it may make its way into our line-up either permanently or seasonally.</p>

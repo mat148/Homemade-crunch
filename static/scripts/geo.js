@@ -23,8 +23,6 @@ document.addEventListener('DOMContentLoaded', function(event) {
 
   } else {
     console.log('yes cookie');
-    application[0].classList.add('alert-open');
-    banner[0].classList.add('alert-open');
   }
 });
 
@@ -51,12 +49,15 @@ function getCookie(name) {
 
 function compareCity(city) {
   var i;
+  var isNy = false;
   for(i = 0; i < nyList.length; i++) {
     if(nyList[i].toLowerCase().replace(/\s/g, '') == city.toLowerCase().replace(/\s/g, '')) {
       console.log(city);
-
-      application[0].classList.add('alert-open');
-      banner[0].classList.add('alert-open');
+      isNy = true;
     }
+  }
+  if (isNy == false) {
+    application[0].classList.add('alert-open');
+    banner[0].classList.add('alert-open');
   }
 }
