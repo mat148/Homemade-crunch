@@ -191,7 +191,10 @@
                     <li>Nuts</li>
                     <li>Soy</li>
                   </ul>
-                  <h2 class="mt-3"><b>$8.99</b></h2>
+                  <div class="d-flex mt-3 justify-center align-center">
+                    <h2><b>$8.99</b></h2>
+                    <span class="pl-1"><i>+ shipping</i></span>
+                  </div>
                 </div>
 
                 <div class="button-container pt-12 d-flex justify-center">
