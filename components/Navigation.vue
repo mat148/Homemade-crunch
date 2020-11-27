@@ -58,7 +58,7 @@
             v-model="group"
           >
             <v-list-item class="about-nav nav-item" style="animation-delay:0.1s" v-scroll-to="'#about'" @click="drawer = false">
-              <h1 class="py-6 px-3 pointer-none">About</h1>
+              <h1 class="py-6 px-3 pointer-none">About us</h1>
             </v-list-item>
 
             <v-list-item class="local-nav nav-item" style="animation-delay:0.2s" v-scroll-to="'#source'" @click="drawer = false">
@@ -69,7 +69,7 @@
               <h1 class="py-6 px-3 pointer-none">Shop Granola</h1>
             </v-list-item>
 
-            <v-list-item class="contact-nav nav-item" style="animation-delay:0.4s" v-scroll-to="'#contact'" @click="drawer = false">
+            <v-list-item class="contact-nav nav-item" style="animation-delay:0.4s" v-scroll-to="'#contact-about'" @click="drawer = false">
               <h1 class="py-6 px-3 pointer-none">Contact us</h1>
             </v-list-item>
           </v-list-item-group>
