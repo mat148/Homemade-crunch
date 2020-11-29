@@ -401,7 +401,7 @@
         </v-container>
       </v-footer>
 
-      <div hidden id="snipcart" data-api-key="ZWYzZmI3NjctZjZmNS00ODExLThjNDctZDZkODk2MDM5NWZhNjM3Mzg0ODAyNTU2MTYyOTI3"></div>
+      <div hidden id="snipcart" data-api-key="MjcyNjRhNjgtZjljZC00OTU5LThhY2YtYmU2NTg2NzIyNTVjNjM3Mzg0ODAyNTU2MTYyOTI3"></div>
   </v-app>
 </template>
 
