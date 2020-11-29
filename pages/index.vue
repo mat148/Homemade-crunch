@@ -217,12 +217,13 @@
                 <div class="button-container pt-12 d-flex justify-center">
                   <v-button
                     class="product__button snipcart-add-item maple-honey-granola"
-                    data-item-id="1"
+                    data-item-id="2"
                     data-item-price="8.99"
                     data-item-url="/"
                     data-item-description="A tasty blend of oats, nuts, and seeds. Great with milk, or over yogurt."
                     data-item-name="Honey/maple granola with walnuts and cranberries"
-                    data-item-weight="340"
+                    data-item-weight="380"
+                    data-item-image="/images/HoneyMapleGranolaWithWalnutsandCranberries.jpg"
                   >
                     Add to cart
                   </v-button>
