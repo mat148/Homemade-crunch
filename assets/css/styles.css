@@ -420,6 +420,9 @@ body {
   max-height: 500px;
   width: 100%;
 }
+.shop .image-container .v-image .v-image__image {
+  background-size: contain;
+}
 .shop .shop-one {
   padding: 12px 12px 30px 12px;
 }
