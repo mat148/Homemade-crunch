@@ -233,7 +233,7 @@
             <div class="image-container d-flex justify-center justify-lg-end align-center">
               <v-img
                 class="bag"
-                src="images/HoneyMapleGranolaWithWalnutsandCranberries.jpg"
+                src="images/GranolaCutout.png"
               ></v-img>
             </div>
           </v-container>
