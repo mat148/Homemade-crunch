@@ -223,7 +223,7 @@
                     data-item-description="A tasty blend of oats, nuts, and seeds. Great with milk, or over yogurt."
                     data-item-name="Honey/maple granola with walnuts and cranberries"
                     data-item-weight="380"
-                    data-item-image="/images/HoneyMapleGranolaWithWalnutsandCranberries.jpg"
+                    data-item-image="/images/GranolaCutout.png"
                   >
                     Add to cart
                   </v-button>
