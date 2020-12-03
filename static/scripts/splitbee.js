@@ -9,13 +9,25 @@ document.addEventListener('DOMContentLoaded', function(event) {
 
   //SOURCE HOVER EVENTS
   source_oats_link[0].addEventListener('mouseover', function(event) {
-    window.splitbee.track("Source_oats_link_hover");
+    var a = 0;
+    if(a == 0) {
+      window.splitbee.track("Source_oats_link_hover");
+      a++;
+    }
   });
   source_honey_link[0].addEventListener('mouseover', function(event) {
-    window.splitbee.track("Source_honey_link_hover");
+    var a = 0;
+    if(a == 0) {
+      window.splitbee.track("Source_honey_link_hover");
+      a++;
+    }
   });
   source_maple_link[0].addEventListener('mouseover', function(event) {
-    window.splitbee.track("Source_maple_link_hover");
+    var a = 0;
+    if(a == 0) {
+      window.splitbee.track("Source_maple_link_hover");
+      a++;
+    }
   });
 
   //SOURCE CLICK EVENTS
