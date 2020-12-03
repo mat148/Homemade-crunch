@@ -24,7 +24,6 @@
         <v-banner
           class="state-alert"
           transition="slide-y-transition"
-          @mouseenter="alertHover"
         >
           By our calculations, it looks like you might be visiting our website from outside of New York. Unfortunately, at this time, we can't sell our Granola outside of New York. If you are buying a gift for someone with a New York address, then please proceed.
           <template>
@@ -112,7 +111,10 @@
 
         <section class="source py-12">
           <div class="source-anchor" id="source"></div>
-          <v-container class="py-0 py-lg-12">
+          <v-container
+            class="py-0 py-lg-12"
+            @mouseenter="sourceHover"
+          >
             <div class="source__header d-flex align-center justify-center">
               <h1 class="text-center mb-0 mb-lg-12">Locally Sourced</h1>
             </div>
@@ -136,7 +138,6 @@
                       href="http://www.gianfortefarm.com/"
                       target="_blank"
                       text
-                      @mouseenter="sourceOatsLinkHover"
                       @mousedown="sourceOatsLinkClick"
                     >
                       <b>Gianforte Farm</b>
@@ -163,7 +164,6 @@
                       href="http://www.johnstonshoneybeefarm.com/"
                       target="_blank"
                       text
-                      @mouseenter="sourceHoneyLinkHover"
                       @mousedown="sourceHoneyLinkClick"
                     >
                       <b>Johnston's Honey Bee Farm</b>
@@ -190,7 +190,6 @@
                       href="https://willow-creek-farm-maple-syrup.business.site/"
                       target="_blank"
                       text
-                      @mouseenter="sourceMapleLinkHover"
                       @mousedown="sourceMapleLinkClick"
                       >
                         <b>Willow creek Farm</b>
@@ -205,7 +204,10 @@
 
         <section class="shop py-12">
           <div class="shop-anchor" id="shop"></div>
-          <v-container class="py-0 py-lg-12 d-flex flex-wrap flex-column-reverse flex-lg-row shop-one">
+          <v-container
+            class="py-0 py-lg-12 d-flex flex-wrap flex-column-reverse flex-lg-row shop-one"
+            @mouseenter="shopHover"
+          >
             <div class="content-container pr-0 pt-6 pt-lg-0 pr-lg-12 d-flex justify-start align-center">
               <div class="content-container-inner text-center">
                 <h1 class="pb-6">Honey/Maple Granola with walnuts and cranberries</h1>
@@ -254,7 +256,6 @@
                     data-item-name="Honey/maple granola with walnuts and cranberries"
                     data-item-weight="380"
                     data-item-image="/images/GranolaCutout.png"
-                    @mouseenter="granolaAddToCartHover"
                     @mousedown="granolaAddToCartClick"
                   >
                     Add to cart
@@ -309,7 +310,6 @@
                   <v-button
                     class="product__button scroll-to-footer"
                     v-scroll-to="'#footer'"
-                    @mouseenter="newsletterScrollToHover"
                     @mousedown="newsletterScrollToClick"
                   >
                     Signup for our newsletter
@@ -406,7 +406,10 @@
         class="pa-0 black"
         id="footer"
       >
-        <v-container class="py-12 d-flex">
+        <v-container
+          class="py-12 d-flex"
+          @mouseenter="footerHover"
+        >
           <v-card
             flat
             tile
@@ -428,7 +431,6 @@
               href="https://www.instagram.com/homemade_crunch/"
               target="_blank"
               text
-              @mouseenter="instaLinkHover"
               @mousedown="instaLinkClick"
             >
               <v-icon>mdi-instagram</v-icon>
@@ -438,7 +440,6 @@
               href="https://www.facebook.com/homemadecrunch"
               target="_blank"
               text
-              @mouseenter="facebookLinkHover"
               @mousedown="facebookLinkClick"
             >
               <v-icon>mdi-facebook</v-icon>
@@ -448,7 +449,6 @@
               href="https://www.pinterest.com/homemadecrunch/"
               target="_blank"
               text
-              @mouseenter="pinterestLinkHover"
               @mousedown="pinterestLinkClick"
             >
               <v-icon>mdi-pinterest</v-icon>
@@ -458,7 +458,6 @@
               href="https://www.youtube.com/channel/UC6H-8_ndZOqqaurpu22ebvg"
               target="_blank"
               text
-              @mouseenter="youtubeLinkHover"
               @mousedown="youtubeLinkClick"
             >
               <v-icon>mdi-youtube</v-icon>
@@ -497,9 +496,6 @@
     },
     methods: {
       //Alert
-      alertHover: function() {
-        window.splitbee.track("Alert_hover");
-      },
       alertCloseClick: function() {
         window.splitbee.track("Alert_close_click");
       },
@@ -512,34 +508,24 @@
         window.splitbee.track("About_hover");
       },
       //Source links
-      sourceOatsLinkHover: function(){
-        window.splitbee.track("Source_oats_link_hover");
+      sourceHover: function() {
+        window.splitbee.track("Source_hover");
       },
       sourceOatsLinkClick: function(){
         window.splitbee.track("Source_oats_link_click");
       },
-      sourceHoneyLinkHover: function(){
-        window.splitbee.track("Source_honey_link_hover");
-      },
       sourceHoneyLinkClick: function(){
         window.splitbee.track("Source_honey_link_click");
-      },
-      sourceMapleLinkHover: function(){
-        window.splitbee.track("Source_maple_link_hover");
       },
       sourceMapleLinkClick: function(){
         window.splitbee.track("Source_maple_link_click");
       },
       //Cart
-      granolaAddToCartHover: function() {
-        window.splitbee.track("Granola_add_to_cart_hover");
+      shopHover: function() {
+        window.splitbee.track("Shop_hover");
       },
       granolaAddToCartClick: function() {
         window.splitbee.track("Granola_add_to_cart_click");
-      },
-      //Scroll to newsletter
-      newsletterScrollToHover: function() {
-        window.splitbee.track("Newsletter_scroll_to_hover");
       },
       newsletterScrollToClick: function() {
         window.splitbee.track("Granola_add_to_cart_click");
@@ -558,26 +544,17 @@
         window.splitbee.track("Message_form_click");
       },
       //Social icons
-      instaLinkHover: function() {
-        window.splitbee.track("Instagram_link_hover");
+      footerHover: function() {
+        window.splitbee.track("Footer_hover");
       },
       instaLinkClick: function() {
         window.splitbee.track("Instagram_link_click");
       },
-      facebookLinkHover: function() {
-        window.splitbee.track("Facebook_link_hover");
-      },
       facebookinkClick: function() {
         window.splitbee.track("Facebook_link_click");
       },
-      pinterestLinkHover: function() {
-        window.splitbee.track("Pinterest_link_hover");
-      },
       pinterestLinkClick: function() {
         window.splitbee.track("Pinterest_link_click");
-      },
-      youtubeLinkHover: function() {
-        window.splitbee.track("Youtube_link_hover");
       },
       youtubeLinkClick: function() {
         window.splitbee.track("Youtube_link_click");
