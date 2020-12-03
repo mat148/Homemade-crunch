@@ -426,6 +426,7 @@
             <v-btn
               class="pa-0 white--text"
               href="https://www.instagram.com/homemade_crunch/"
+              target="_blank"
               text
               @mouseenter="instaLinkHover"
               @mousedown="instaLinkClick"
@@ -435,6 +436,7 @@
             <v-btn
               class="pa-0 white--text"
               href="https://www.facebook.com/homemadecrunch"
+              target="_blank"
               text
               @mouseenter="facebookLinkHover"
               @mousedown="facebookLinkClick"
@@ -444,6 +446,7 @@
             <v-btn
               class="pa-0 white--text"
               href="https://www.pinterest.com/homemadecrunch/"
+              target="_blank"
               text
               @mouseenter="pinterestLinkHover"
               @mousedown="pinterestLinkClick"
@@ -453,6 +456,7 @@
             <v-btn
               class="pa-0 white--text"
               href="https://www.youtube.com/channel/UC6H-8_ndZOqqaurpu22ebvg"
+              target="_blank"
               text
               @mouseenter="youtubeLinkHover"
               @mousedown="youtubeLinkClick"
