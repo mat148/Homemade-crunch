@@ -348,16 +348,19 @@
                     label="Name"
                     name="name"
                     required
+                    @mousedown="nameFormClick"
                   ></v-text-field>
                   <v-text-field
                     label="Email"
                     name="_replyto"
                     required
+                    @mousedown="emailFormClick"
                   ></v-text-field>
                   <v-textarea
                     label="Message"
                     name="message"
                     required
+                    @mousedown="messageFormClick"
                   ></v-textarea>
                   <v-btn
                     type="submit"
@@ -423,7 +426,6 @@
             <v-btn
               class="pa-0 white--text"
               href="https://www.instagram.com/homemade_crunch/"
-              target="_blank"
               text
               @mouseenter="instaLinkHover"
               @mousedown="instaLinkClick"
@@ -433,7 +435,6 @@
             <v-btn
               class="pa-0 white--text"
               href="https://www.facebook.com/homemadecrunch"
-              target="_blank"
               text
               @mouseenter="facebookLinkHover"
               @mousedown="facebookLinkClick"
@@ -443,7 +444,6 @@
             <v-btn
               class="pa-0 white--text"
               href="https://www.pinterest.com/homemadecrunch/"
-              target="_blank"
               text
               @mouseenter="pinterestLinkHover"
               @mousedown="pinterestLinkClick"
@@ -453,7 +453,6 @@
             <v-btn
               class="pa-0 white--text"
               href="https://www.youtube.com/channel/UC6H-8_ndZOqqaurpu22ebvg"
-              target="_blank"
               text
               @mouseenter="youtubeLinkHover"
               @mousedown="youtubeLinkClick"
@@ -478,14 +477,14 @@
 
 <script>
   import Navigation from "~/components/Navigation.vue";
-import func from "../vue-temp/vue-editor-bridge";
 
   export default ({
     head() {
       return {
         script: [{
           body: true,
-          src: 'scripts/geo.js'
+          src: 'scripts/geo.js',
+          src: 'scripts/splitbee.js'
         }]
       }
     },
@@ -508,25 +507,23 @@ import func from "../vue-temp/vue-editor-bridge";
       aboutHover: function() {
         window.splitbee.track("About_hover");
       },
-      //Source Oats link
-      sourceOatsLinkHover: function() {
+      //Source links
+      sourceOatsLinkHover: function(){
         window.splitbee.track("Source_oats_link_hover");
       },
-      sourceOatsLinkClick: function() {
+      sourceOatsLinkClick: function(){
         window.splitbee.track("Source_oats_link_click");
       },
-      //Source honey link
-      sourceHoneyLinkHover: function() {
+      sourceHoneyLinkHover: function(){
         window.splitbee.track("Source_honey_link_hover");
       },
-      sourceHoneyLinkClick: function() {
+      sourceHoneyLinkClick: function(){
         window.splitbee.track("Source_honey_link_click");
       },
-      //Source maple link
-      sourceMapleLinkHover: function() {
+      sourceMapleLinkHover: function(){
         window.splitbee.track("Source_maple_link_hover");
       },
-      sourceMapleLinkClick: function() {
+      sourceMapleLinkClick: function(){
         window.splitbee.track("Source_maple_link_click");
       },
       //Cart
@@ -546,6 +543,15 @@ import func from "../vue-temp/vue-editor-bridge";
       //Contact form
       contactFormSubmit: function() {
         window.splitbee.track("Contact_form_submit");
+      },
+      nameFormClick: function() {
+        window.splitbee.track("Name_form_click");
+      },
+      emailFormClick: function() {
+        window.splitbee.track("Email_form_click");
+      },
+      messageFormClick: function() {
+        window.splitbee.track("Message_form_click");
       },
       //Social icons
       instaLinkHover: function() {
@@ -571,7 +577,7 @@ import func from "../vue-temp/vue-editor-bridge";
       },
       youtubeLinkClick: function() {
         window.splitbee.track("Youtube_link_click");
-      },
+      }
     }
   });
 </script>
