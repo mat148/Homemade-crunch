@@ -129,6 +129,7 @@
                       target="_blank"
                       text
                       @mouseenter="sourceOatsLinkHover"
+                      @mousedown="sourceOatsLinkClick"
                     >
                       <b>Gianforte Farm</b>
                     </v-btn>
@@ -155,6 +156,7 @@
                       target="_blank"
                       text
                       @mouseenter="sourceHoneyLinkHover"
+                      @mousedown="sourceHoneyLinkClick"
                     >
                       <b>Johnston's Honey Bee Farm</b>
                     </v-btn>
@@ -181,6 +183,7 @@
                       target="_blank"
                       text
                       @mouseenter="sourceMapleLinkHover"
+                      @mousedown="sourceMapleLinkClick"
                       >
                         <b>Willow creek Farm</b>
                     </v-btn>
@@ -432,8 +435,7 @@
       return {
         script: [{
           body: true,
-          src: 'scripts/geo.js',
-          src: 'scripts/splitbee.js'
+          src: 'scripts/geo.js'
         }]
       }
     },
@@ -441,14 +443,26 @@
       Navigation
     },
     methods: {
+      //Source Oats link
       sourceOatsLinkHover: function(){
         window.splitbee.track("Source_oats_link_hover");
       },
+      sourceOatsLinkClick: function(){
+        window.splitbee.track("Source_oats_link_click");
+      },
+      //Source honey link
       sourceHoneyLinkHover: function(){
         window.splitbee.track("Source_honey_link_hover");
       },
+      sourceHoneyLinkClick: function(){
+        window.splitbee.track("Source_honey_link_click");
+      },
+      //Source maple link
       sourceMapleLinkHover: function(){
         window.splitbee.track("Source_maple_link_hover");
+      },
+      sourceMapleLinkClick: function(){
+        window.splitbee.track("Source_maple_link_click");
       }
     }
   });
