@@ -24,12 +24,14 @@
         <v-banner
           class="state-alert"
           transition="slide-y-transition"
+          @mouseenter="alertHover"
         >
           By our calculations, it looks like you might be visiting our website from outside of New York. Unfortunately, at this time, we can't sell our Granola outside of New York. If you are buying a gift for someone with a New York address, then please proceed.
           <template>
             <v-btn
               icon
               color="alert"
+              @mousedown="alertCloseClick"
             >
               <v-icon>mdi-close</v-icon>
             </v-btn>
@@ -38,7 +40,10 @@
 
         <div class="hero-about-container">
           <section class="hero py-12" id="hero">
-            <v-container class="py-0 py-lg-12 fill-height d-flex justify-center align-center">
+            <v-container
+              class="py-0 py-lg-12 fill-height d-flex justify-center align-center"
+              @mouseenter="heroHover"
+            >
               <div class="hero-content">
                 <h1 class="mb-6">Finding healthy & guilt-free granola that tastes this good</h1>
                 <h2>Makes life this good</h2>
@@ -443,6 +448,17 @@
       Navigation
     },
     methods: {
+      //Alert
+      alertHover: function() {
+        window.splitbee.track("Alert_hover");
+      },
+      alertCloseClick: function() {
+        window.splitbee.track("Alert_close_click");
+      },
+      //Hero hover
+      heroHover: function() {
+        window.splitbee.track("Hero_hover");
+      },
       //Source Oats link
       sourceOatsLinkHover: function(){
         window.splitbee.track("Source_oats_link_hover");
