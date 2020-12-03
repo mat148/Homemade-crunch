@@ -61,7 +61,10 @@
 
           <section class="about py-12">
             <div class="about-anchor" id="about"></div>
-            <v-container class="py-0 py-lg-12 d-flex flex-wrap">
+            <v-container
+              class="py-0 py-lg-12 d-flex flex-wrap"
+              @mouseenter="aboutHover"
+            >
               <v-card
                 class="text-center pa-6"
                 flat
@@ -251,6 +254,8 @@
                     data-item-name="Honey/maple granola with walnuts and cranberries"
                     data-item-weight="380"
                     data-item-image="/images/GranolaCutout.png"
+                    @mouseenter="granolaAddToCartHover"
+                    @mousedown="granolaAddToCartClick"
                   >
                     Add to cart
                   </v-button>
@@ -304,6 +309,8 @@
                   <v-button
                     class="product__button scroll-to-footer"
                     v-scroll-to="'#footer'"
+                    @mouseenter="newsletterScrollToHover"
+                    @mousedown="newsletterScrollToClick"
                   >
                     Signup for our newsletter
                   </v-button>
@@ -434,6 +441,7 @@
 
 <script>
   import Navigation from "~/components/Navigation.vue";
+import func from "../vue-temp/vue-editor-bridge";
 
   export default ({
     head() {
@@ -459,27 +467,45 @@
       heroHover: function() {
         window.splitbee.track("Hero_hover");
       },
+      //About hover
+      aboutHover: function() {
+        window.splitbee.track("About_hover");
+      },
       //Source Oats link
-      sourceOatsLinkHover: function(){
+      sourceOatsLinkHover: function() {
         window.splitbee.track("Source_oats_link_hover");
       },
-      sourceOatsLinkClick: function(){
+      sourceOatsLinkClick: function() {
         window.splitbee.track("Source_oats_link_click");
       },
       //Source honey link
-      sourceHoneyLinkHover: function(){
+      sourceHoneyLinkHover: function() {
         window.splitbee.track("Source_honey_link_hover");
       },
-      sourceHoneyLinkClick: function(){
+      sourceHoneyLinkClick: function() {
         window.splitbee.track("Source_honey_link_click");
       },
       //Source maple link
-      sourceMapleLinkHover: function(){
+      sourceMapleLinkHover: function() {
         window.splitbee.track("Source_maple_link_hover");
       },
-      sourceMapleLinkClick: function(){
+      sourceMapleLinkClick: function() {
         window.splitbee.track("Source_maple_link_click");
-      }
+      },
+      //Cart
+      granolaAddToCartHover: function() {
+        window.splitbee.track("Granola_add_to_cart_hover");
+      },
+      granolaAddToCartClick: function() {
+        window.splitbee.track("Granola_add_to_cart_click");
+      },
+      //Scroll to newsletter
+      newsletterScrollToHover: function() {
+        window.splitbee.track("Newsletter_scroll_to_hover");
+      },
+      newsletterScrollToClick: function() {
+        window.splitbee.track("Granola_add_to_cart_click");
+      },
     }
   });
 </script>
