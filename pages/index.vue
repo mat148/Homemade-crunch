@@ -122,7 +122,17 @@
                     alt="Gianforte Farm based in Cazenovia, New york"
                   ></v-img>
                   <v-card-title>Rolled Oats</v-card-title>
-                  <span class="d-flex flex-wrap justify-center justify-sm-left">Sourced from <v-btn class="pa-0 link ml-1 source-oats-link" href="http://www.gianfortefarm.com/" target="_blank" text><b>Gianforte Farm</b></v-btn></span>
+                  <span class="d-flex flex-wrap justify-center justify-sm-left">Sourced from
+                    <v-btn
+                      class="pa-0 link ml-1 source-oats-link"
+                      href="http://www.gianfortefarm.com/"
+                      target="_blank"
+                      text
+                      @mouseenter="sourceOatsLinkHover"
+                    >
+                      <b>Gianforte Farm</b>
+                    </v-btn>
+                  </span>
                   <v-card-text class="text-center">Gianforte Farm tills 600 acres of Honeoye soils in the rolling hilltops north of Cazenovia, New York</v-card-text>
                 </div>
               </v-card>
@@ -138,7 +148,17 @@
                     src="images/johnstonHoneyBeeFarm.jpg"
                   ></v-img>
                   <v-card-title>Honey</v-card-title>
-                  <span class="d-flex flex-wrap justify-center justify-sm-left">Sourced from <v-btn class="pa-0 ml-1 link source-honey-link" href="http://www.johnstonshoneybeefarm.com/" target="_blank" text><b>Johnston's Honey Bee Farm</b></v-btn></span>
+                  <span class="d-flex flex-wrap justify-center justify-sm-left">Sourced from
+                    <v-btn
+                      class="pa-0 ml-1 link source-honey-link"
+                      href="http://www.johnstonshoneybeefarm.com/"
+                      target="_blank"
+                      text
+                      @mouseenter="sourceHoneyLinkHover"
+                    >
+                      <b>Johnston's Honey Bee Farm</b>
+                    </v-btn>
+                  </span>
                   <v-card-text class="text-center">Johnston's Honeybee Farm is a sideline operation that has grown from 100 to 300 hives over the past twenty years, located in Eaton, NY</v-card-text>
                 </div>
               </v-card>
@@ -154,7 +174,17 @@
                     src="images/WillowCreekFarmMapleSyrup.jpg"
                   ></v-img>
                   <v-card-title>Maple Syrup</v-card-title>
-                  <span class="d-flex flex-wrap justify-center justify-sm-left">Sourced from <v-btn class="pa-0 ml-1 link source-maple-link" href="https://willow-creek-farm-maple-syrup.business.site/" target="_blank" text><b>Willow creek Farm</b></v-btn></span>
+                  <span class="d-flex flex-wrap justify-center justify-sm-left">Sourced from
+                    <v-btn
+                      class="pa-0 ml-1 link source-maple-link"
+                      href="https://willow-creek-farm-maple-syrup.business.site/"
+                      target="_blank"
+                      text
+                      @mouseenter="sourceMapleLinkHover"
+                      >
+                        <b>Willow creek Farm</b>
+                    </v-btn>
+                  </span>
                   <v-card-text class="text-center">Premium maple products such as maple syrup, candy, popcorn, sugar, and maple cream produced in Fulton, NY</v-card-text>
                 </div>
               </v-card>
@@ -409,6 +439,17 @@
     },
     components: {
       Navigation
+    },
+    methods: {
+      sourceOatsLinkHover: function(){
+        window.splitbee.track("Source_oats_link_hover");
+      },
+      sourceHoneyLinkHover: function(){
+        window.splitbee.track("Source_honey_link_hover");
+      },
+      sourceMapleLinkHover: function(){
+        window.splitbee.track("Source_maple_link_hover");
+      }
     }
   });
 </script>
