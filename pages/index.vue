@@ -342,6 +342,7 @@
                 <form
                   action="https://formspree.io/f/mvovqvle"
                   method="POST"
+                  @submit="contactFormSubmit"
                 >
                   <v-text-field
                     label="Name"
@@ -419,10 +420,46 @@
             class="black"
           >
             <v-card-title class="pa-0 white--text mb-2">Follow Us</v-card-title>
-            <v-btn class="pa-0 white--text" href="https://www.instagram.com/homemade_crunch/" text><v-icon>mdi-instagram</v-icon></v-btn>
-            <v-btn class="pa-0 white--text" href="https://www.facebook.com/homemadecrunch" text><v-icon>mdi-facebook</v-icon></v-btn>
-            <v-btn class="pa-0 white--text" href="https://www.pinterest.com/homemadecrunch/" text><v-icon>mdi-pinterest</v-icon></v-btn>
-            <v-btn class="pa-0 white--text" href="https://www.youtube.com/channel/UC6H-8_ndZOqqaurpu22ebvg" text><v-icon>mdi-youtube</v-icon></v-btn>
+            <v-btn
+              class="pa-0 white--text"
+              href="https://www.instagram.com/homemade_crunch/"
+              target="_blank"
+              text
+              @mouseenter="instaLinkHover"
+              @mousedown="instaLinkClick"
+            >
+              <v-icon>mdi-instagram</v-icon>
+            </v-btn>
+            <v-btn
+              class="pa-0 white--text"
+              href="https://www.facebook.com/homemadecrunch"
+              target="_blank"
+              text
+              @mouseenter="facebookLinkHover"
+              @mousedown="facebookLinkClick"
+            >
+              <v-icon>mdi-facebook</v-icon>
+            </v-btn>
+            <v-btn
+              class="pa-0 white--text"
+              href="https://www.pinterest.com/homemadecrunch/"
+              target="_blank"
+              text
+              @mouseenter="pinterestLinkHover"
+              @mousedown="pinterestLinkClick"
+            >
+              <v-icon>mdi-pinterest</v-icon>
+            </v-btn>
+            <v-btn
+              class="pa-0 white--text"
+              href="https://www.youtube.com/channel/UC6H-8_ndZOqqaurpu22ebvg"
+              target="_blank"
+              text
+              @mouseenter="youtubeLinkHover"
+              @mousedown="youtubeLinkClick"
+            >
+              <v-icon>mdi-youtube</v-icon>
+            </v-btn>
           </v-card>
           <v-card
             flat
@@ -505,6 +542,35 @@ import func from "../vue-temp/vue-editor-bridge";
       },
       newsletterScrollToClick: function() {
         window.splitbee.track("Granola_add_to_cart_click");
+      },
+      //Contact form
+      contactFormSubmit: function() {
+        window.splitbee.track("Contact_form_submit");
+      },
+      //Social icons
+      instaLinkHover: function() {
+        window.splitbee.track("Instagram_link_hover");
+      },
+      instaLinkClick: function() {
+        window.splitbee.track("Instagram_link_click");
+      },
+      facebookLinkHover: function() {
+        window.splitbee.track("Facebook_link_hover");
+      },
+      facebookinkClick: function() {
+        window.splitbee.track("Facebook_link_click");
+      },
+      pinterestLinkHover: function() {
+        window.splitbee.track("Pinterest_link_hover");
+      },
+      pinterestLinkClick: function() {
+        window.splitbee.track("Pinterest_link_click");
+      },
+      youtubeLinkHover: function() {
+        window.splitbee.track("Youtube_link_hover");
+      },
+      youtubeLinkClick: function() {
+        window.splitbee.track("Youtube_link_click");
       },
     }
   });
