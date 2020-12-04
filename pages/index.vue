@@ -550,7 +550,7 @@
       instaLinkClick: function() {
         window.splitbee.track("Instagram_link_click");
       },
-      facebookinkClick: function() {
+      facebookLinkClick: function() {
         window.splitbee.track("Facebook_link_click");
       },
       pinterestLinkClick: function() {
