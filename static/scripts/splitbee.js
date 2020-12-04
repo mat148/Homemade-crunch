@@ -8,7 +8,6 @@ var cartContinuetoPaymentButton;
 var cartPlaceOrderButton;
 
 window.onpopstate = function(event) {
-  //console.log("location: " + document.location + ", state: " + JSON.stringify(event.state));
   if(window.location.href == 'https://www.homemadecrunch.com/#/cart' || window.location.href == 'http://192.168.1.9:3333/#/cart') {
     setTimeout(() => {
       //Close cart
@@ -50,31 +49,58 @@ window.onpopstate = function(event) {
           window.splitbee.track("Cart_checkout_click");
         });
       }
+    }, 500);
+  }
+
+  if(window.location.href == 'https://www.homemadecrunch.com/#/checkout' || window.location.href == 'http://192.168.1.9:3333/#/checkout') {
+    setTimeout(() => {
+      var ButtonClasses = 'snipcart-cart-button snipcart__font--bold snipcart__font--secondary snipcart-cart-button--highlight snipcart__font--large';
 
       //Shipping
-      cartContinueToShippingButton = document.getElementsById('snipcart-checkout-step-billing').getElementsByClassName('snipcart-cart-button snipcart__font--bold snipcart__font--secondary snipcart-cart-button--highlight snipcart__font--large');
-      if(cartContinueToShippingButton[0]) {
-        cartContinueToShippingButton[0].addEventListener('click', function(event) {
-          window.splitbee.track("Cart_continue_to_shipping_click");
-        });
-      }
+      var shippingContainer = document.getElementById('snipcart-checkout-step-billing');
+      console.log(shippingContainer);
+
+      var shippingExist = setInterval(function() {
+        if(shippingContainer.getElementsByClassName(ButtonClasses)[0]) {
+          cartContinueToShippingButton = shippingContainer.getElementsByClassName(ButtonClasses);
+
+          cartContinueToShippingButton[0].addEventListener('click', function(event) {
+            console.log('Cart_continue_to_shipping_click');
+            window.splitbee.track("Cart_continue_to_shipping_click");
+          });
+          clearInterval(shippingExist);
+        }
+      }, 100);
 
       //Payment
-      cartContinuetoPaymentButton = document.getElementsById('snipcart-checkout-step-shipping').getElementsByClassName('snipcart-cart-button snipcart__font--bold snipcart__font--secondary snipcart-cart-button--highlight snipcart__font--large');
-      if(cartContinuetoPaymentButton[0]) {
-        cartContinuetoPaymentButton[0].addEventListener('click', function(event) {
-          window.splitbee.track("Cart_continue_to_payment_click");
-        });
-      }
+      var paymentContainer = document.getElementById('snipcart-checkout-step-shipping');
+
+      var paymentExist = setInterval(function() {
+        if(paymentContainer.getElementsByClassName(ButtonClasses)[0]) {
+          cartContinuetoPaymentButton = paymentContainer.getElementsByClassName(ButtonClasses);
+
+          cartContinuetoPaymentButton[0].addEventListener('click', function(event) {
+            console.log('Cart_continue_to_payment_click');
+            window.splitbee.track("Cart_continue_to_payment_click");
+          });
+          clearInterval(paymentExist);
+        }
+      }, 100);
 
       //Place order
-      cartPlaceOrderButton = document.getElementsById('snipcart-checkout-step-payment').getElementsByClassName('snipcart-cart-button snipcart__font--bold snipcart__font--secondary snipcart-cart-button--highlight snipcart__font--large');
-      if(cartPlaceOrderButton[0]) {
-        cartPlaceOrderButton[0].addEventListener('click', function(event) {
-          window.splitbee.track("Cart_continue_to_place_order_click");
-        });
-      }
+      var orderContainer = document.getElementById('snipcart-checkout-step-payment');
 
+      var orderExist = setInterval(function() {
+        if(orderContainer.getElementsByClassName(ButtonClasses)[0]) {
+          cartPlaceOrderButton = orderContainer.getElementsByClassName(ButtonClasses);
+
+          cartPlaceOrderButton[0].addEventListener('click', function(event) {
+            console.log('Cart_continue_to_place_order_click');
+            window.splitbee.track("Cart_continue_to_place_order_click");
+          });
+          clearInterval(orderExist);
+        }
+      }, 100);
     }, 500);
   }
 };
