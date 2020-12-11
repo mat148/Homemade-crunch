@@ -44,8 +44,9 @@
               @mouseenter="heroHover"
             >
               <div class="hero-content">
-                <h1 class="mb-6">Finding healthy & guilt-free granola that tastes this good</h1>
-                <h2>Makes life this good</h2>
+                <span>homemade granola</span>
+                <span>locally sourced</span>
+                <span>made in the ❤️ of NY</span>
               </div>
             </v-container>
             <div class="hero-granola-container" name="test">
