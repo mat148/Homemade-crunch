@@ -47,6 +47,7 @@ window.onpopstate = function(event) {
       if(cartCheckoutButton[0]) {
         cartCheckoutButton[0].addEventListener('click', function(event) {
           window.splitbee.track("Cart_checkout_click");
+          fbq('track', 'InitiateCheckout');
         });
       }
     }, 500);
@@ -82,6 +83,7 @@ window.onpopstate = function(event) {
           cartContinuetoPaymentButton[0].addEventListener('click', function(event) {
             console.log('Cart_continue_to_payment_click');
             window.splitbee.track("Cart_continue_to_payment_click");
+            fbq('track', 'AddPaymentInfo');
           });
           clearInterval(paymentExist);
         }
@@ -97,6 +99,10 @@ window.onpopstate = function(event) {
           cartPlaceOrderButton[0].addEventListener('click', function(event) {
             console.log('Cart_continue_to_place_order_click');
             window.splitbee.track("Cart_continue_to_place_order_click");
+            fbq('track', 'Purchase', {
+              value: 8.99,
+              currency: 'USD'
+            });
           });
           clearInterval(orderExist);
         }

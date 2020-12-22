@@ -14,13 +14,6 @@
         'https://connect.facebook.net/en_US/fbevents.js');
         fbq('init', '383630456210253');
         fbq('track', 'PageView');
-        fbq('track', 'AddToCart');
-        fbq('track', 'InitiateCheckout');
-        fbq('track', 'AddPaymentInfo');
-        fbq('track', 'Purchase', {
-          value: 8.99,
-          currency: 'USD'
-        });
       </script>
       <noscript><img height="1" width="1" style="display:none"
         src="https://www.facebook.com/tr?id=383630456210253&ev=PageView&noscript=1"
@@ -534,6 +527,7 @@
       },
       granolaAddToCartClick: function() {
         window.splitbee.track("Granola_add_to_cart_click");
+        fbq('track', 'AddToCart');
       },
       newsletterScrollToClick: function() {
         window.splitbee.track("Granola_add_to_cart_click");
