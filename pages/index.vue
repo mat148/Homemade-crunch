@@ -242,16 +242,16 @@
                     <li>Soy</li>
                   </ul>
                   <div class="d-flex mt-3 justify-center align-center">
-                    <h2><b>$8.99</b></h2>
-                    <span class="pl-1"><i>+ shipping</i></span>
+                    <h2><b>$12.99</b></h2>
+                    <span class="pl-1"><i>FREE shipping</i></span>
                   </div>
                 </div>
 
                 <div class="button-container pt-12 d-flex justify-center">
                   <v-button
                     class="product__button snipcart-add-item maple-honey-granola"
-                    data-item-id="2"
-                    data-item-price="8.99"
+                    data-item-id="3"
+                    data-item-price="12.99"
                     data-item-url="/"
                     data-item-description="A tasty blend of oats, nuts, and seeds. Great with milk, or over yogurt."
                     data-item-name="Honey/maple granola with walnuts and cranberries"
