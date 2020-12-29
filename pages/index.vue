@@ -271,7 +271,7 @@
               ></v-img>
             </div>
           </v-container>
-          <v-container class="py-lg-12 d-flex flex-wrap flex-column flex-lg-row shop-two">
+          <!--<v-container class="py-lg-12 d-flex flex-wrap flex-column flex-lg-row shop-two">
             <div class="content-container pl-0 pl-lg-12 pt-6 pt-lg-0 d-flex align-center">
               <div class="content-container-inner text-center">
                 <h1 class="pb-6">Semi-regular small test batch granola</h1>
@@ -279,7 +279,7 @@
 
                 <p class="mb-1">To make sure you don't miss out on the next drop, sign up for our newsletter where you can also get special offers and information on our farmers' market appearances!</p>
 
-                <!--<div class="info-container">
+                <div class="info-container">
                   <ul class="ingredients reset-list d-flex flex-wrap justify-center">
                     <li class="bold">Ingredients:</li>
                     <li>Whole rolled oats</li>
@@ -305,7 +305,7 @@
                     <li>Nuts</li>
                     <li>Soy</li>
                   </ul>
-                </div>-->
+                </div>
 
                 <div class="button-container pt-12 d-flex justify-center">
                   <v-button
@@ -316,15 +316,15 @@
                     Signup for our newsletter
                   </v-button>
 
-                  <!--<v-button
+                  <v-button
                     class="product__button snipcart-add-item disabled"
                   >
                     Add to cart
-                  </v-button>-->
+                  </v-button>
                 </div>
               </div>
             </div>
-          </v-container>
+          </v-container>-->
         </section>
 
         <section class="contact-about py-12">
